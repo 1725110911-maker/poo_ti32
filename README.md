@@ -1,6 +1,6 @@
 # Repositorio de Programacion Orientada a Objetos con Python 
 
-Repositorio con Ejercicios de Programación Orientada a Objetos.
+# Repositorio con Ejercicios de Programación Orientada a Objetos.
  
 ##1.Crear .gitignore
 
