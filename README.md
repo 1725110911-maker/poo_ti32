@@ -57,3 +57,9 @@ Crea su commit correspondiente:
 ````shell
 git commit -m "Agregar primer código"
 ````
+## Si YA habías subido el commit viejo a GitHub
+Si el commit agrupado ya aparecía en la página de GitHub, el servidor rechazará tu envío porque estás alterando el historial. 
+Para resolverlo, debes obligar a GitHub a aceptar  nuevos commits usando el parámetro --force:
+````shell
+bashgit push -u origin main --force
+````
