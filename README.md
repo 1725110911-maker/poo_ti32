@@ -39,3 +39,21 @@ Sincroniza los cambios realizados en el repositorio
 git push -u origin main
 ````
 
+## 0. Deshacer el commit actual
+Este comando borra el commit pero mantiene intactos tus archivos y tu código en el área de trabajo:
+````shell
+git reset HEAD~1
+````
+
+## 0.1. Crear los 4 commits individuales
+Ahora que tus archivos están libres, debes agruparlos y registrarlos uno por uno. 
+Repite este proceso para cada uno de tus 4 códigos:
+Prepara el primer archivo:
+````shell
+git add ruta/del/archivo1.ext
+````
+
+Crea su commit correspondiente:
+````shell
+git commit -m "Agregar primer código"
+````
