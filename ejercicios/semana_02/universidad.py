@@ -22,7 +22,24 @@ class Universidad:
         print(f"Talleres:{self.talleres}")
         print(f"Cantidad de salores:{self.cantidad_de_salones}")
         print(f"Rector:{self.rector}")
+    
+    def inscribirAlumno(self):
+        print("Se inscribio")
+    def contratarProfesor(self):
+        print("Estas contratado")
+    def abrirCarrera(self):
+        print("Se abre")
+    def darBeca(self):
+        print("Te lo mereces")
+    def graduarAlumnos(self):
+        print("te graduaste")
 
 unideh = Universidad("logo.jpg", "ing.software, turismo alternativo", 
     "San miguel", "CADU", "Virtual", "Biblioteca digital", 
     "santa catarina", None, None, "Octavio Castillo")
+
+unideh.contratarProfesor()
+unideh.darBeca()
+unideh.graduarAlumnos()
+unideh.inscribirAlumno()
+unideh.abrirCarrera()
