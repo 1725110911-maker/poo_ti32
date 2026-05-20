@@ -22,8 +22,25 @@ class Telefono:
         print(f"Conectividad:{self.conectividad}")
         print(f"Material:{self.material}")
         print(f"Sensores:{self.sensores}")
+    
+    def llamar(self):
+        print("Bueno?")
+    def jugar(self):
+        print("YEY")
+    def colorear(self):
+        print("jeje")
+    def prestar(self):
+        print("me lo prestas")
+    def robar(self):
+        print("Muajaja")
 
 poo_m5s = Telefono("Media tek helio G96", "4GB/6GB", "6.43`` AMOLED Dont display",
     "64 GB/128GB UFS 2.2.", "5000 mAh con carga rapida", 
     "cuadruple sensor principal de 64 MP", "MIUI 13 basado em android 12",
     "4G LTE", "Policarbonato", "Huella dactilar e IA de desbloqueo")
+
+poo_m5s.colorear()
+poo_m5s.llamar()
+poo_m5s.jugar()
+poo_m5s.prestar()
+poo_m5s.robar()
