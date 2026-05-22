@@ -6,7 +6,7 @@
 
 Crear el archivo .gitignore para configurar los archivos y carpetas que no deseamos que se guarden en el rrepositorio.
 
-````shell
+````python
 *.pyc
 __pycache__/
 ````
@@ -15,7 +15,7 @@ __pycache__/
 
 Indexa todos los archivos y carpetas en busca de documentos nuevos.
 
-````shell
+````python
 git add .
 ````
 
@@ -23,7 +23,7 @@ git add .
 
 Crea un comit o punto de control de los cambios realizados en el proyecto.
 
-````shell
+````python
 git commit -m "CREATED .gitignore"
 ````
 
@@ -35,13 +35,38 @@ git commit -m "CREATED .gitignore"
 
 Sincroniza los cambios realizados en el repositorio
 
-````shell
+````python
 git push -u origin main
+````
+
+## 5. Agregar Documentación a los métodos
+
+agragar un **Docstring** a los métodos generados
+
+**ejemplo**
+
+````python
+
+"""
+Este metodo recibe 2 variables enteras, la suma y regresa el resultado de la suma
+    
+Args:
+    
+variable_uno:int - Primer numero entero
+variable_dos:int - Segundo numero entero
+    
+:return
+    
+suma:int - Suma de los dos numeros enteros
+    
+"""
+
 ````
 
 ## 0. Deshacer el commit actual
 Este comando borra el commit pero mantiene intactos tus archivos y tu código en el área de trabajo:
-````shell
+
+````python
 git reset HEAD~1
 ````
 
@@ -49,17 +74,20 @@ git reset HEAD~1
 Ahora que tus archivos están libres, debes agruparlos y registrarlos uno por uno. 
 Repite este proceso para cada uno de tus 4 códigos:
 Prepara el primer archivo:
-````shell
+
+````python
 git add ruta/del/archivo1.ext
 ````
 
 Crea su commit correspondiente:
-````shell
+
+````python
 git commit -m "Agregar primer código"
 ````
 ## Si YA habías subido el commit viejo a GitHub
 Si el commit agrupado ya aparecía en la página de GitHub, el servidor rechazará tu envío porque estás alterando el historial. 
 Para resolverlo, debes obligar a GitHub a aceptar  nuevos commits usando el parámetro --force:
-````shell
+
+````python
 bashgit push -u origin main --force
 ````
